@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="32.00" TargetName="Control_PID" TargetType="Routine" TargetSubType="RLL" ContainsContext="true" ExportDate="Tue Jul 27 23:02:22 2021" ExportOptions="References NoRawData L5KData DecoratedData Context Dependencies ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="CL1_CM37_PCP_Controller">
+<DataTypes Use="Context">
+</DataTypes>
+<Programs Use="Context">
+<Program Use="Context" Name="MainProgram">
+<Tags Use="Context">
+<Tag Name="BIT_Act_ControlDilu" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Control_Flujo_Diluente" TagType="Base" DataType="PID" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[4864,7.00000000e+001,2.00000000e-001,1.00000000e-001,3.00000000e-001,0.00000000e+000,1.00000000e+002
+		,0.00000000e+000,1.00000000e+000,1.00000000e+002,1.00000000e+002,0.00000000e+000,5.00000000e-001
+		,-2.50000000e+001,9.50000000e+001,1.00000000e+002,1.10000000e+002,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000,1.00000000e+002,0.00000000e+000,0.00000000e+000
+		,1.00000000e+002,0.00000000e+000,0.00000000e+000,1.00000000e+002,[8.39053040e+001,4.00000000e+002
+		,-2.50000000e+001,9.50000000e+001,7.00000000e+001,1.00000000e+000,1.00000000e+000,8.30000019e+000
+		,2.00000000e-001,1.00000000e-001,3.00000000e-001,2.00000000e-001,1.00000000e-001,3.00000000e-001
+		,0.00000000e+000,1.00000000e+000,1.00000000e+000]]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="PID">
+<DataValueMember Name="CTL" DataType="DINT" Radix="Decimal" Value="4864"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PVT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DOE" DataType="BOOL" Value="0"/>
+<DataValueMember Name="SWM" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CA" DataType="BOOL" Value="0"/>
+<DataValueMember Name="MO" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PE" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NDF" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NOBC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NOZC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="INI" DataType="BOOL" Value="0"/>
+<DataValueMember Name="SPOR" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OLL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OLH" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EWD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DVNA" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DVPA" DataType="BOOL" Value="1"/>
+<DataValueMember Name="PVLA" DataType="BOOL" Value="1"/>
+<DataValueMember Name="PVHA" DataType="BOOL" Value="0"/>
+<DataValueMember Name="SP" DataType="REAL" Radix="Float" Value="70.0"/>
+<DataValueMember Name="KP" DataType="REAL" Radix="Float" Value="0.2"/>
+<DataValueMember Name="KI" DataType="REAL" Radix="Float" Value="0.1"/>
+<DataValueMember Name="KD" DataType="REAL" Radix="Float" Value="0.3"/>
+<DataValueMember Name="BIAS" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="MAXS" DataType="REAL" Radix="Float" Value="100.0"/>
+<DataValueMember Name="MINS" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="DB" DataType="REAL" Radix="Float" Value="1.0"/>
+<DataValueMember Name="SO" DataType="REAL" Radix="Float" Value="100.0"/>
+<DataValueMember Name="MAXO" DataType="REAL" Radix="Float" Value="100.0"/>
+<DataValueMember Name="MINO" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="UPD" DataType="REAL" Radix="Float" Value="0.5"/>
+<DataValueMember Name="PV" DataType="REAL" Radix="Float" Value="-25.0"/>
+<DataValueMember Name="ERR" DataType="REAL" Radix="Float" Value="95.0"/>
+<DataValueMember Name="OUT" DataType="REAL" Radix="Float" Value="100.0"/>
+<DataValueMember Name="PVH" DataType="REAL" Radix="Float" Value="110.0"/>
+<DataValueMember Name="PVL" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="DVP" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="DVN" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="PVDB" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="DVDB" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="MAXI" DataType="REAL" Radix="Float" Value="100.0"/>
+<DataValueMember Name="MINI" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="TIE" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="MAXCV" DataType="REAL" Radix="Float" Value="100.0"/>
+<DataValueMember Name="MINCV" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="MINTIE" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="MAXTIE" DataType="REAL" Radix="Float" Value="100.0"/>
+<ArrayMember Name="DATA" DataType="REAL" Dimensions="17" Radix="Float">
+<Element Index="[0]" Value="83.905304"/>
+<Element Index="[1]" Value="400.0"/>
+<Element Index="[2]" Value="-25.0"/>
+<Element Index="[3]" Value="95.0"/>
+<Element Index="[4]" Value="70.0"/>
+<Element Index="[5]" Value="1.0"/>
+<Element Index="[6]" Value="1.0"/>
+<Element Index="[7]" Value="8.3"/>
+<Element Index="[8]" Value="0.2"/>
+<Element Index="[9]" Value="0.1"/>
+<Element Index="[10]" Value="0.3"/>
+<Element Index="[11]" Value="0.2"/>
+<Element Index="[12]" Value="0.1"/>
+<Element Index="[13]" Value="0.3"/>
+<Element Index="[14]" Value="0.0"/>
+<Element Index="[15]" Value="1.0"/>
+<Element Index="[16]" Value="1.0"/>
+</ArrayMember>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="IN_Analog_Rango_Maximo" TagType="Base" DataType="DINT" Dimensions="10" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[800,20,20,20,1000,0,0,1000,0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="DINT" Dimensions="10" Radix="Decimal">
+<Element Index="[0]" Value="800"/>
+<Element Index="[1]" Value="20"/>
+<Element Index="[2]" Value="20"/>
+<Element Index="[3]" Value="20"/>
+<Element Index="[4]" Value="1000"/>
+<Element Index="[5]" Value="0"/>
+<Element Index="[6]" Value="0"/>
+<Element Index="[7]" Value="1000"/>
+<Element Index="[8]" Value="0"/>
+<Element Index="[9]" Value="0"/>
+</Array>
+</Data>
+</Tag>
+<Tag Name="IN_Analog_Rango_Minimo" TagType="Base" DataType="DINT" Dimensions="10" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[0,4,4,4,0,0,0,0,0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="DINT" Dimensions="10" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="4"/>
+<Element Index="[2]" Value="4"/>
+<Element Index="[3]" Value="4"/>
+<Element Index="[4]" Value="0"/>
+<Element Index="[5]" Value="0"/>
+<Element Index="[6]" Value="0"/>
+<Element Index="[7]" Value="0"/>
+<Element Index="[8]" Value="0"/>
+<Element Index="[9]" Value="0"/>
+</Array>
+</Data>
+</Tag>
+<Tag Name="Kd" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[3.00000000e-001]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.3"/>
+</Data>
+</Tag>
+<Tag Name="Ki" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[1.00000000e-001]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.1"/>
+</Data>
+</Tag>
+<Tag Name="Kp" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[2.00000000e-001]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.2"/>
+</Data>
+</Tag>
+<Tag Name="Porc_Apertura_Valvula" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[1.00000000e+002]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="100.0"/>
+</Data>
+</Tag>
+<Tag Name="Porc_FlujoAct_Dilu" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[-2.50000000e+001]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="-25.0"/>
+</Data>
+</Tag>
+<Tag Name="SEL_A_0" TagType="Base" DataType="INT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[4]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="INT" Radix="Decimal" Value="4"/>
+</Data>
+</Tag>
+<Tag Name="SEL_A_1" TagType="Base" DataType="INT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[8]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="INT" Radix="Decimal" Value="8"/>
+</Data>
+</Tag>
+<Tag Name="SEL_A_2" TagType="Base" DataType="INT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[8]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="INT" Radix="Decimal" Value="8"/>
+</Data>
+</Tag>
+<Tag Name="SEL_A_3" TagType="Base" DataType="INT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[8]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="INT" Radix="Decimal" Value="8"/>
+</Data>
+</Tag>
+<Tag Name="SetPoint_Ctrl_Dilu" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[7.00000000e+002]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="700.0"/>
+</Data>
+</Tag>
+</Tags>
+<Routines Use="Context">
+<EncodedData EncodedType="Routine" Name="Control_PID" Type="RLL" EncryptionConfig="9">
+AAntczhDnlLfjoRxdSGozQMVborLzsBmR4jaqGe91iLsEvYy9zl//9WqYWXTarBjCn+e7s/JUXpyAajTq8zImD+IUK9DvGwLxDu2RXeZmcZEUJgug0eBMZ4K23dylp8aSzn+nlLcdbtSqqMCdYj9oKFj060E8P5PyB4pbLdSkcgxfwvjuMruw2+hDZHFflZD5HACOy8l/mkDNgMFfeUKDQw6u+b8M+ZVOgj5w2mQCzXkaxx/OTDeaDaapejTT3nAbJFYyapLMmIhrauT5s81Ao7OjQYMBMYyJ4qndcB6jdPASSZIs6pC3JK3eAM3T2Hpzn6JcMLsGkrICt6Aw3PaG4tXPpAXpp04GRCoCRDZ0TK+NNGWBjCPA9ej1d9Z4oi7c4SC0vHUnAWBkttTzP2WFTV9Idst0Fyf2l2XcX2floFXlvSHb05TMmvJgIBdHdjEk9+KZGeaFUU+LnYYszL6gtHJuWYTKblWRhJKN85RgUhy7PJqy0ooQt0WYmh5b6b798/daMS2P7V/aoDMu4aZ12Hu5CLC244IEUwSQI2MrVbvMbAl4ieBx+v0tCo8bIpPtuov/qLyJhGMYxSJ/6SMfCJ/EMwAmpIGsZX7YM+B9ZDDpFGXaKhOaHaHpFNeYYHWfHxBlp7a5iCSqeXUk30AVvDhNbmrjPmsgaqk6H0xPpAQixashsDsYSLWDCk/TKlQa354X8w0srLdaqU0+p7Lt7F8rsplX5fFC2NdjrP+kuX4FPqJDm/m8oZDZHb54EgsC5trwvsVU93lVg8EecA6iyiVhv0smEYjDlQtNaxu4ALIiCvBOKQb/y6VpfGUK9zyUj1vFEnfkHTIzseyB1PcLeVqDaV9ovZOUc8D0u2+xiYnYqacNQe5rsU6E/8gNq8iUqDwdfl6Y7Se7qyg4dISE4XsVKe0BE9UvDT0gwyXw0hgtNSStWorbePU42aUafOO73kYqioEZiWMDV/eo0T/BOPkGeqFPQp83zWCDiJ2hKXDig6lmWx/p7Trqosuzd5f5z0QQp74kFwHNKf6cjvoDInBEdIBKxiklxB60c2irmGDIOMpb7r0q/pIjK6m9itsJcwgT1nJoexatfNToDvsAd3O5SdJ5HjpQtf8LgSUzdCtmdfwjLDdwN35fOY12XPZ8vWRV2+EVG2+FgdcLlBkac2pJVa6lw+l/DQIJXaBf7LKmAu5s8zr3JgnNmrghKBTnRoQ1NyjjvpGQvNxXY097Mi+0/4SNh8v75cLD7Dj9JjsL99ef3rWQoANBoNA9orkQ75PJC0+wrt3PwuDtrAZl5Czk3Wzacg6BtWvBt1siyaIhWPEU6ZkSTBZu4ixsz32zeCspcMZCT1x5vW3+nlxOyjwmSijOwbnj5n8Fz1Z0BQZY8ZfrkHg5HHiUdKrFxCymYPwatPvylqr2mvIFIyy+qbR9l+H2/pSARE00UbgR91Mzth0kC3WkHceqWgAWdzjzsHCydRAweIfjRRZjR41Hhug78Z8LK/0uAfIZpNpMCSB+kh9nO8bb6AVKazh3cr7vzvFQK6xCvoBlHxOskLD0ZTLFXiJdtR8jrf3YOcmYVuGIexzmrYesFLM6vQlYWEjPkr1uqVnpFKxL9C+/EYjks2q53mJVWN2EwXSJvBUfdZvDsR8NCTtRnQO2rnXo+f4DrchsoyT3W+kPvu+qnW7qw8lyv+qTK3a+38irLxk+pYhNl9XxClhQZ37aKvNXoXQie4CTMok2Gea6lw6yrbez5ZqvwmIy3sCEHUKR+Ah1HguniQNUrZjOiKMUMtZIZiacRCf59n761+PepJYQA</EncodedData>
+</Routines>
+</Program>
+</Programs>
+</Controller>
+</RSLogix5000Content>

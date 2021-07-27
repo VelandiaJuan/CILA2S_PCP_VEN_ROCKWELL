@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="32.00" TargetName="PROTECCIONES" TargetType="Routine" TargetSubType="RLL" ContainsContext="true" ExportDate="Tue Jul 27 23:02:48 2021" ExportOptions="References NoRawData L5KData DecoratedData Context Dependencies ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="CL1_CM37_PCP_Controller">
+<DataTypes Use="Context">
+</DataTypes>
+<Modules Use="Context">
+<Module Use="Reference" Name="PF7">
+</Module>
+</Modules>
+<Tags Use="Context">
+<Tag Name="STATUS_de_Entradas_Digitales" TagType="Base" DataType="DINT" Radix="Binary" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+</Data>
+</Tag>
+</Tags>
+<Programs Use="Context">
+<Program Use="Context" Name="MainProgram">
+<Tags Use="Context">
+<Tag Name="BIT" TagType="Base" DataType="DINT" Dimensions="12" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[1327614587,537165824,1090519040,604000256,1048576,638583044,536871428,2,1120,0,0,4194304]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="DINT" Dimensions="12" Radix="Decimal">
+<Element Index="[0]" Value="1327614587"/>
+<Element Index="[1]" Value="537165824"/>
+<Element Index="[2]" Value="1090519040"/>
+<Element Index="[3]" Value="604000256"/>
+<Element Index="[4]" Value="1048576"/>
+<Element Index="[5]" Value="638583044"/>
+<Element Index="[6]" Value="536871428"/>
+<Element Index="[7]" Value="2"/>
+<Element Index="[8]" Value="1120"/>
+<Element Index="[9]" Value="0"/>
+<Element Index="[10]" Value="0"/>
+<Element Index="[11]" Value="4194304"/>
+</Array>
+</Data>
+</Tag>
+<Tag Name="BIT_ActDesc_Proteccion_DIFFP" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="BIT_ActDesc_Proteccion_NIVELF" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="BIT_ActDesc_Proteccion_PFLU" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="BIT_ActDesc_Proteccion_PIN" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="BIT_ActDesc_Proteccion_TEMPEIN" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="BIT_ActDesc_Proteccion_THP" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[7]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="7"/>
+</Data>
+</Tag>
+<Tag Name="Diferencial_de_Presion" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Falla_Proteccion_DIFFP" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Falla_Proteccion_NIVELF" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Falla_Proteccion_PFLU" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Falla_Proteccion_PIN" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Falla_Proteccion_TEMPEIN" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="ONS_Act_Alarm" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[-536870911]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="-536870911"/>
+</Data>
+</Tag>
+<Tag Name="ONS_ActDes_Protec" TagType="Base" DataType="BOOL" Dimensions="32" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#1,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0
+		,2#0,2#0,2#0,2#0,2#0]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="BOOL" Dimensions="32" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+<Element Index="[2]" Value="0"/>
+<Element Index="[3]" Value="0"/>
+<Element Index="[4]" Value="0"/>
+<Element Index="[5]" Value="0"/>
+<Element Index="[6]" Value="0"/>
+<Element Index="[7]" Value="1"/>
+<Element Index="[8]" Value="0"/>
+<Element Index="[9]" Value="0"/>
+<Element Index="[10]" Value="0"/>
+<Element Index="[11]" Value="0"/>
+<Element Index="[12]" Value="0"/>
+<Element Index="[13]" Value="0"/>
+<Element Index="[14]" Value="0"/>
+<Element Index="[15]" Value="0"/>
+<Element Index="[16]" Value="0"/>
+<Element Index="[17]" Value="0"/>
+<Element Index="[18]" Value="0"/>
+<Element Index="[19]" Value="0"/>
+<Element Index="[20]" Value="0"/>
+<Element Index="[21]" Value="0"/>
+<Element Index="[22]" Value="0"/>
+<Element Index="[23]" Value="0"/>
+<Element Index="[24]" Value="0"/>
+<Element Index="[25]" Value="0"/>
+<Element Index="[26]" Value="0"/>
+<Element Index="[27]" Value="0"/>
+<Element Index="[28]" Value="0"/>
+<Element Index="[29]" Value="0"/>
+<Element Index="[30]" Value="0"/>
+<Element Index="[31]" Value="0"/>
+</Array>
+</Data>
+</Tag>
+<Tag Name="ONS_Protec_THP" TagType="Base" DataType="TIMER" Dimensions="4" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[[685994,3000,0],[725261,3000,0],[0,60000,0],[0,60000,0]]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="TIMER" Dimensions="4">
+<Element Index="[0]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="3000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[1]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="3000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[2]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="60000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[3]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="60000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+</Array>
+</Data>
+</Tag>
+<Tag Name="Parada_por_Falla_Protecciones" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="PF7_I_Active" TagType="Alias" Radix="Decimal" AliasFor="PF7:I.Active" ExternalAccess="Read/Write"/>
+<Tag Name="PF7_I_AtSpeed" TagType="Alias" Radix="Decimal" AliasFor="PF7:I.AtSpeed" ExternalAccess="Read/Write"/>
+<Tag Name="Presion_Casing_Actual" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Presion_FLU_Actual" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Presion_IN_Actual" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Presion_NivelF_Actual" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[-43]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="-43"/>
+</Data>
+</Tag>
+<Tag Name="Presion_OUT_Actual" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="SetPoin_Proteccion_DIFFP" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="SetPoin_Proteccion_NIVELF" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="SetPoin_Proteccion_PFLU" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="SetPoin_Proteccion_PIN" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="SetPoin_Proteccion_TEMPEIN" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="SetPoin_Proteccion_THP" TagType="Base" DataType="DINT" Dimensions="4" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[0,0,200,250]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="DINT" Dimensions="4" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+<Element Index="[2]" Value="200"/>
+<Element Index="[3]" Value="250"/>
+</Array>
+</Data>
+</Tag>
+<Tag Name="Tempe_IN_Actual" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="THP_Actual" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</Data>
+</Tag>
+<Tag Name="TimerMsj_Falla_Proteccion_DIFFP" TagType="Base" DataType="TIMER" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[2006796,10000,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="10000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="TimerMsj_Falla_Proteccion_NIVELF" TagType="Base" DataType="TIMER" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[1574487,10000,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="10000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="TimerMsj_Falla_Proteccion_PFLU" TagType="Base" DataType="TIMER" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[1360640,10000,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="10000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="TimerMsj_Falla_Proteccion_PIN" TagType="Base" DataType="TIMER" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[0,10000,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="10000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="TimerMsj_Falla_Proteccion_TEMPEIN" TagType="Base" DataType="TIMER" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[1925147,10000,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="10000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="TimerMsj_Falla_Proteccion_THP_H" TagType="Base" DataType="TIMER" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[2911043,10000,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="10000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="TimerMsj_Falla_Proteccion_THP_HH" TagType="Base" DataType="TIMER" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[500494,10000,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="10000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="TimerMsj_Falla_Proteccion_THP_L" TagType="Base" DataType="TIMER" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[1253638,10000,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="10000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="TimerMsj_Falla_Proteccion_THP_LL" TagType="Base" DataType="TIMER" Constant="false" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[0,10000,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="10000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+</Tags>
+<Routines Use="Context">
+<EncodedData EncodedType="Routine" Name="PROTECCIONES" Type="RLL" EncryptionConfig="9">
+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</EncodedData>
+</Routines>
+</Program>
+</Programs>
+</Controller>
+</RSLogix5000Content>
